@@ -62,6 +62,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -133,3 +134,23 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+    
+}
+
+AUTHENTICATION_BACKENDS = [
+    'accounts.backends.EmailBackend',   # your custom email backend
+    'django.contrib.auth.backends.ModelBackend',  # keep this for admin superuser
+]
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'pinuj421@gmail.com'
+EMAIL_HOST_PASSWORD = 'mdwu arso sxgh gtso'
+EMAIL_USE_TLS = True
