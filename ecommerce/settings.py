@@ -152,5 +152,5 @@ AUTHENTICATION_BACKENDS = [
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'pinuj421@gmail.com'
-EMAIL_HOST_PASSWORD = 'mdwu arso sxgh gtso'
+EMAIL_HOST_PASSWORD = 'zbsn xnuh ngce xqda'
 EMAIL_USE_TLS = True
